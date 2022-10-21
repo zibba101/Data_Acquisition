@@ -1,0 +1,10 @@
+CREATE TABLE public.services(
+customer_id character varying (256) NOT NULL,
+InternetService text NOT NULL,
+Phone text NOT NULL,
+Multiple text NOT NULL,
+OnlineSecurity text NOT NULL,
+OnlineBAckup text NOT NULL,
+DeviceProtection text NOT NULL,
+TechSupport text NOT NULL,
+CONSTRAINT services_pkey PRIMARY KEY (customer_id) );

@@ -1,0 +1,1 @@
+--command " "\\copy public.services (customer_id, \"InternetService\", \"Phone\", \"Multiple\", \"OnlineSecurity\", \"OnlineBackup\", \"DeviceProtection\", \"TechSupport\") FROM 'C:/Users/LabUser/Desktop/Services.csv' DELIMITER ',' CSV HEADER QUOTE '\"' ESCAPE '''';""

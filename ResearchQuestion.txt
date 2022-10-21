@@ -1,0 +1,13 @@
+
+--count the number of customers over 55 and max monthly payment
+SELECT Count(internetservice) AS Seniors_Using_DSL, 
+	ROUND(MAX(monthly_charge),2) AS max_monthly_payment
+FROM customer
+
+--join customer and services table
+INNER JOIN services
+ON services.customer_id = customer.customer_id
+
+--filter to over 55 and internet service is DSL
+WHERE age > 55
+AND internetservice = 'DSL';
